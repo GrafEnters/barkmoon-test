@@ -1,0 +1,11 @@
+{
+  "data": [
+    {
+      "id": "95f6138d-380d-44f9-8d9c-f6a178ecd78d",
+      "type": "fact",
+      "attributes": {
+        "body": "Dalmatian puppies are born completely white."
+      }
+    }
+  ]
+}

@@ -19,6 +19,6 @@ MonoBehaviour:
   ClickCost: 1
   AutoCollectCost: 1
   CurrencyPerClick: 1
-  ButtonMaxAngle: 50
+  ButtonMaxAngle: 15
   ButtonPressDuration: 0.13
   ButtonReturnDuration: 0.25
