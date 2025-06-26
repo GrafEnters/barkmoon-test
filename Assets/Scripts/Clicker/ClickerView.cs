@@ -11,12 +11,14 @@ public class ClickerView : MonoBehaviour {
     public GameObject VFXTextPrefab;
     public RectTransform VFXParent;
     public ClickerConfig Config;
+    public ParticleSystem ClickParticlePrefab;
 
     public System.Action OnClick;
 
     private void Awake() {
         ClickButton.onClick.AddListener(() => {
             PlayButtonBounce();
+            PlayClickParticles();
             OnClick?.Invoke();
         });
     }
@@ -72,5 +74,13 @@ public class ClickerView : MonoBehaviour {
             .OnComplete(() =>
                 rect.DOLocalRotateQuaternion(Quaternion.identity, returnDuration).SetEase(Ease.OutElastic)
             );
+    }
+
+    private void PlayClickParticles()
+    {
+        if (ClickParticlePrefab == null) {
+            return;
+        }
+        ClickParticlePrefab.Play();
     }
 }
