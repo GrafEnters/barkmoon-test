@@ -10,6 +10,6 @@ public class ClickerInstaller : MonoInstaller
         Container.BindInstance(View).AsSingle();
         Container.BindInstance(Config).AsSingle();
         Container.Bind<ClickerModel>().AsSingle();
-        Container.Bind<ClickerController>().AsSingle().NonLazy();
+        Container.BindInterfacesTo<ClickerController>().AsSingle().NonLazy();
     }
 } 

@@ -10,4 +10,9 @@ public class ClickerConfig : ScriptableObject
     public int ClickCost = 1;
     public int AutoCollectCost = 1;
     public int CurrencyPerClick = 1;
+    
+    [Header("Visual")]
+    public float ButtonMaxAngle = 18f;
+    public float ButtonPressDuration = 0.13f;
+    public float ButtonReturnDuration = 0.25f;
 } 
